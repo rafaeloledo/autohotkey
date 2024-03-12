@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]
+"base-script"="C:\\dev\\projects\\autohotkey\\base.ahk"
+"lol-script"="C:\\dev\\projects\\autohotkey\\league_of_legends.ahk"
+

@@ -1,5 +1,6 @@
 ^+/::Send {/} ; for portuguese layout with english kbd
 !/::Send {?}  ; for portuguese layout with english kbd
+
 !PgDn::Send {End}
 +!PgDn::Send +{End}
 !PgUp::Send {Home}
