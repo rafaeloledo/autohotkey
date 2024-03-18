@@ -6,6 +6,14 @@
 !PgUp::Send {Home}
 +!PgUp::Send +{Home}
 
+#IfWinNotActive ahk_exe WindowsTerminal.exe
+
+^d::Send {PgDn}
+^u::Send {PgUp}
+
+#IfWinNotActive
+
+
 !1::SendEvent {LWin down}{LCtrl down}{Left down}{LWin up}{LCtrl up}{Left up}
 !2::SendEvent {LWin down}{LCtrl down}{Right down}{LWin up}{LCtrl up}{Right up}
 
