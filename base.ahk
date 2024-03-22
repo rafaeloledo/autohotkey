@@ -18,3 +18,6 @@
 !2::SendEvent {LWin down}{LCtrl down}{Right down}{LWin up}{LCtrl up}{Right up}
 
 !q::!F4
+
+^n::SendEvent {Down down}{Down up}
+CapsLock::LCtrl
