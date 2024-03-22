@@ -10,6 +10,7 @@
 
 ^d::Send {PgDn}
 ^u::Send {PgUp}
+^w::^Backspace
 
 #IfWinNotActive
 
@@ -19,6 +20,6 @@
 
 !q::!F4
 
+^p::SendEvent {Up down}{Up up}
 ^n::SendEvent {Down down}{Down up}
 CapsLock::LCtrl
-^w::^Backspace
