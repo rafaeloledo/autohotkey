@@ -21,3 +21,4 @@
 
 ^n::SendEvent {Down down}{Down up}
 CapsLock::LCtrl
+^w::^Backspace
