@@ -1,16 +1,20 @@
-^+/::Send {/} ; for portuguese layout with english kbd
-!/::Send {?}  ; for portuguese layout with english kbd
+^+/::Send {/}
+!/::Send {?}
 
 !PgDn::Send {End}
 +!PgDn::Send +{End}
 !PgUp::Send {Home}
 +!PgUp::Send +{Home}
 
-#IfWinNotActive ahk_exe WindowsTerminal.exe
+#If !(WinActive("ahk_exe WindowsTerminal.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe League of Legends.exe") || WinActive("ahk_exe LeagueClientUx.exe"))
 
 ^d::Send {PgDn}
 ^u::Send {PgUp}
 ^w::^Backspace
+^p::SendEvent {Up down}{Up up}
+^n::SendEvent {Down down}{Down up}
+
+#If
 
 #IfWinNotActive
 
@@ -20,6 +24,4 @@
 
 !q::!F4
 
-^p::SendEvent {Up down}{Up up}
-^n::SendEvent {Down down}{Down up}
 CapsLock::LCtrl
