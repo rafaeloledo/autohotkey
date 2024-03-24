@@ -8,7 +8,8 @@ CapsLock::LCtrl
 !q::!F4
 
 #HotIf not (WinActive("ahk_exe WindowsTerminal.exe") or 
-WinActive("ahk_exe firefox.exe") or 
+WinActive("ahk_exe firefox.exe") or
+WinActive("ahk_exe msedge.exe") or
 WinActive("ahk_exe League of Legends.exe") or 
 WinActive("ahk_exe LeagueClientUx.exe"))
 
@@ -38,9 +39,14 @@ WinActive("ahk_exe LeagueClientUx.exe"))
 
 #HotIf
 
-#HotIf WinActive("ahk_exe devenv.exe") or WinActive("ahk_exe Code.exe")
+#HotIf WinActive("ahk_exe devenv.exe") or
+WinActive("ahk_exe Code.exe")
 
 	!5::F5
 	#!5::^F5
+	!l::Right
+	!h::Left
+	!j::Down
+	!k::Up
 
 #HotIf
