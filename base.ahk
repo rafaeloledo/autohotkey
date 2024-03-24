@@ -37,3 +37,10 @@ Esc::`
 !4::F5
 
 #HotIf
+
+#HotIf WinActive("ahk_exe devenv.exe") or WinActive("ahk_exe Code.exe")
+
+!5::F5
+#!5::^F5
+
+#HotIf
