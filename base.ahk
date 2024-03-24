@@ -7,7 +7,7 @@
 CapsLock::LCtrl
 !q::!F4
 
-#HotIf not WinActive("ahk_exe WindowsTerminal.exe" or 
+#HotIf not (WinActive("ahk_exe WindowsTerminal.exe") or 
 WinActive("ahk_exe firefox.exe") or 
 WinActive("ahk_exe League of Legends.exe") or 
 WinActive("ahk_exe LeagueClientUx.exe"))
